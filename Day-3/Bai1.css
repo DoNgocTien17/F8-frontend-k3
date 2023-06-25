@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 30px;
+}
+body{
+    margin: 20px;
+}
+
+h2{
+    color: #333;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 30px;
+}
+h2:after {
+    background-color: #fea14b;
+    bottom: -20px;
+    content: "";
+    display: block;
+    left: 0;
+    height: 4px;
+    width: 60px;
+    position: absolute;
+  }
+.container{
+    display: flex;
+}
+
+.protein{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+}
+.contact-left{
+    color: #868686;
+    margin-right: 100px;
+}
+
+.contact-left ul li{
+    display: flex;
+}
+
+.contact-left li {
+    margin-bottom:20px ;
+}
+.contact-left li i{
+    font-size: 20px;
+    padding: 10px;
+} 
+
+.contact-right{
+
+}
+
+.contact-right input{
+   display: block;
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+button{
+    background-color: #0bb7b5;
+    border: none;
+    color: #fff;
+    padding: 0 10px;
+}
+button:hover{
+    opacity: 0.8;
+}
