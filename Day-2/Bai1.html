@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bài 1</title>
     <style>
-        p{
-            width: 60%;
-        }
-        label{
-            display: block;
-            font-weight: 700;
-        }
-        button{
-            background-color: rgb(0, 255, 81);
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            margin-top: 20px;
-        }
+      p {
+        width: 60%;
+      }
+      label {
+        display: block;
+        font-weight: 700;
+      }
+      button {
+        background-color: rgb(0, 255, 81);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Try a free sample</h1>
-    <p>Sign upp to get coupon you can redeem at your nearest Dancing Goat cafe for a sample of the Colombia Carlos Imbachi cofe. We'll also make
-         sure you don't mis out on news introducing the new cofes that we add to our store regularly.</p>
-    
-            <table width="60%" cellspacing="0" cellpadding="5">
-                <tr>
-                    <td>
-                        <label for="">First me</label>
-                        <input type="text" placeholder="John" >
-                    </td>
-                    <td>
-                        <label for="">Last mame</label>
-                        <input type="text" placeholder="Smith" >
-                    </td>
-                </tr>
+    <p>
+      Sign upp to get coupon you can redeem at your nearest Dancing Goat cafe
+      for a sample of the Colombia Carlos Imbachi cofe. We'll also make sure you
+      don't mis out on news introducing the new cofes that we add to our store
+      regularly.
+    </p>
 
-                <tr>
-                    <td>
-                        <label for="">Email address</label>
-                        <input type="text" placeholder="john@example.com" >
-                    </td>
-                    <td>
-                        <label for="">Address</label>
-                        <input type="text" placeholder="Silk St" >
-                    </td>
-                </tr>
+    <table width="60%" cellspacing="0" cellpadding="5">
+      <tr>
+        <td>
+          <label for="">First me</label>
+          <input type="text" placeholder="John" />
+        </td>
+        <td>
+          <label for="">Last mame</label>
+          <input type="text" placeholder="Smith" />
+        </td>
+      </tr>
 
-                <tr>
-                    <td>
-                        <label for="">City</label>
-                        <input type="text" placeholder="London" >
-                    </td>
-                    <td>
-                        <label for="">State<span>(qptional)</span></label>
-                        <input type="text">
-                    </td>
-                </tr>
+      <tr>
+        <td>
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="john@example.com" />
+        </td>
+        <td>
+          <label for="">Address</label>
+          <input type="text" placeholder="Silk St" />
+        </td>
+      </tr>
 
-                <tr>
-                    <td>
-                        <label for="">ZIP code</label>
-                        <input type="text" placeholder="EC2Y 8DS" >
-                    </td>
-                    <td>
-                        <label for="">Country</label>
-                        <input type="text" placeholder="United Kingdom" >
-                    </td>
-                </tr>
-            </table>
+      <tr>
+        <td>
+          <label for="">City</label>
+          <input type="text" placeholder="London" />
+        </td>
+        <td>
+          <label for="">State<span>(qptional)</span></label>
+          <input type="text" />
+        </td>
+      </tr>
 
-         <button>SEND ME FREE COFFEE</button>
-</body>
+      <tr>
+        <td>
+          <label for="">ZIP code</label>
+          <input type="text" placeholder="EC2Y 8DS" />
+        </td>
+        <td>
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="country">United Kingdom</option>
+            <option value="country">United Kingdom</option>
+            <option value="country">United Kingdom</option>
+            <option value="country">United Kingdom</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <button>SEND ME FREE COFFEE</button>
+  </body>
 </html>
