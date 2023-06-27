@@ -9,13 +9,13 @@ body{
     margin: 20px;
 }
 
-h2{
+h1{
     color: #333;
     font-size: 20px;
     position: relative;
     margin-bottom: 30px;
 }
-h2:after {
+h1:after {
     background-color: #fea14b;
     bottom: -20px;
     content: "";
@@ -29,7 +29,8 @@ h2:after {
     display: flex;
 }
 
-.protein{
+.contact-right h2,
+.contact-left h2 {
     font-weight: 500;
     margin-bottom: 20px;
     color: #000;
@@ -51,16 +52,17 @@ h2:after {
     padding: 10px;
 } 
 
-.contact-right{
-
-}
-
 .contact-right input{
    display: block;
    width: 100%;
    margin-bottom: 10px;
+   padding-left: 5px;
 }
 
+.contact-right textarea{
+    padding-left: 5px;
+
+}
 button{
     background-color: #0bb7b5;
     border: none;

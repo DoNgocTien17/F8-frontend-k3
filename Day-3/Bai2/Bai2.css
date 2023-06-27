@@ -16,15 +16,15 @@ h2{
     margin: 20px 0 60px ;
     position: relative;
 }
-h2:after {
+h2::after {
+    height: 4px;
+    width: 60px;
+    position: absolute;
     background-color: #627afe;
     bottom: -20px;
     content: "";
     display: block;
     left: 47%;
-    height: 4px;
-    width: 60px;
-    position: absolute;
   }
 
 tr{

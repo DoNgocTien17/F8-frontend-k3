@@ -48,7 +48,8 @@ header a{
     margin-bottom: 30px;
 }
 
-.content-left .content-1 p{
+.content-left .content-1 li,
+.content-left .content-2 li{
     font-size: 10px;
 }
 
@@ -56,10 +57,6 @@ header a{
     margin: 10px 0;
     line-height: 10px;
 }   
-
-.content-left .content-2 p{
-    font-size: 10px;
-}
 
 .content-2 p a{
     color: rgb(171, 90, 4);
