@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 550px;
+    height: 700px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.title{
+    font-family: 'Alfa Slab One';
+    font-weight: 1000;
+}
+
+.content-form{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap:15px;
+}
+
+.content-form input{
+    padding: 5px 10px;
+}
+
+.subtitle, 
+.content-form input::placeholder{
+font-family:'Bebas Neue';    
+font-weight: 500;
+}
+
+.content-form button{
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #b0322a;
+    color: #fff;
+    font-family: 'Alfa Slab One';
+}
+
+.content-form button:hover{
+    opacity: 0.8;
+}

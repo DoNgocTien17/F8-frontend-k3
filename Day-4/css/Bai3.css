@@ -1,0 +1,150 @@
+.container {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 50px;
+    line-height: 0;
+}
+
+h2, h3 {
+    line-height: 0;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    background-color: #ddd;
+    padding: 0;
+    font-family: 'roboto';
+}
+
+nav label {
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+li {
+    transition:all 0.2s linear;
+    user-select: none;
+}
+
+.list-item {
+    display: none;
+    column-gap: 10px;
+    
+}
+
+.item { 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 40px;
+    align-items: center;
+    font-family: 'roboto';
+}
+
+.content {
+    position: relative;
+    width: 255px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.content img {
+    position: absolute;
+    object-fit: cover;
+    width: 280px;
+    height: 360px;
+    transition: all 0.2s linear;
+}
+
+.content:hover img:last-of-type {
+    opacity: 0;
+}
+
+.actions {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -110px;
+    opacity: 0.4;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s all ease-in-out;
+}
+
+.content:hover .actions {
+    bottom: 0;
+    opacity: 1;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+[class$='-icon'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    width: 80px;
+    height: 50px;
+    opacity: 0.5;
+    transition: all 0.2s linear;
+}
+
+.item-info {
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.add-to-cart {
+    text-decoration: none;
+    display: inline-block;
+    background-color: blue;
+    color: #fff;
+    opacity: 0.5;
+    min-width: 300px;
+    line-height:3;
+    margin-top: 10px;   
+    transition: all 0.2s linear;
+}
+
+.add-to-cart:hover,
+[class$='-icon']:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+input[type="radio"]:nth-of-type(1):checked ~ nav li:nth-of-type(1),
+input[type="radio"]:nth-of-type(2):checked ~ nav li:nth-of-type(2),
+input[type="radio"]:nth-of-type(3):checked ~ nav li:nth-of-type(3),
+input[type="radio"]:nth-of-type(4):checked ~ nav li:nth-of-type(4),
+input[type="radio"]:nth-of-type(5):checked ~ nav li:nth-of-type(5) {
+    background-color: blue;
+    color: #fff;
+}
+
+input[type="radio"]:nth-of-type(1):checked ~ .products .list-item:nth-child(1),
+input[type="radio"]:nth-of-type(2):checked ~ .products .list-item:nth-child(2),
+input[type="radio"]:nth-of-type(3):checked ~ .products .list-item:nth-child(3),
+input[type="radio"]:nth-of-type(4):checked ~ .products .list-item:nth-child(4),
+input[type="radio"]:nth-of-type(5):checked ~ .products .list-item:nth-child(5) {
+    display: flex;
+}
+
+input[type="radio"] {
+    display: none;
+}

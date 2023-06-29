@@ -1,0 +1,54 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif    ;
+}
+
+.container{
+    background-color:#091b36 ;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.heading strong {
+    color: #eb8a02;
+}
+
+.heading h1{
+    margin-bottom: 20px;
+    color: #fff;
+}
+.heading .subtitle{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    color: #fff;
+}
+
+.container input{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container button{
+    padding: 5px 10px;
+    background-color: #f8db35;
+    border-radius: 5px;
+
+}
+
+.container:hover input::placeholder{
+    color: #eb8a02;
+}
+
+.container:hover input{
+    background-color: #ddd;
+}
+
+.container:hover button{
+    background-color: #eb8a02;
+    color: #fff;
+}
