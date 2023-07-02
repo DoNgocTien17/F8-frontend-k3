@@ -1,0 +1,55 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.text-1 {
+  font-size: 12px;
+}
+
+.container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: auto auto auto;
+  margin: 50px 100px;
+}
+
+.box{
+  box-shadow:2px 2px 5px rgb(113, 113, 113);
+  padding: 20px 10px;
+}
+
+.box .fa-solid{
+  border: 1px solid #f1a83a;
+  border-radius:  50%;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.box .text-2 {
+  font-weight: 900;
+font-size: 20px;
+}
+
+.box .text-3 {
+  font-size: 12px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.box button {
+  background-color: #f1a83a;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+
+.box button:hover {
+  opacity: 0.8;
+}

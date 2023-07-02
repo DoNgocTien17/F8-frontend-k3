@@ -1,0 +1,34 @@
+.toggle-button {
+    display: none;
+  }
+
+  .toggle-button + label {
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    background-color: #d85824;
+    margin: 5px 0;
+    padding: 10px 20px;
+  }
+
+  .toggle-button + label::before {
+    content: "+ ";
+    display: inline-block;
+    padding-right: 5px;
+  }
+
+  .toggle-button:checked + label::before {
+    content: "-";
+  }
+
+  .toggle-button:checked + label + p {
+    display: block;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  p {
+    display: none;
+  }

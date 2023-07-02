@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .content {
+    margin: 30px;
+  }
+
+  .title {
+    font-family: 'Lobster', cursive; 
+    font-size: 50px;
+    padding: 10px 0px;
+  }
+
+  .text {
+    color: red;
+  }
+
+  .input-name,
+  .input-email,
+  .input-phone,
+  .input-message {
+    margin: 15px 0px;
+    position: relative;
+    width: 100%;
+    
+  }
+/*input name*/
+  input[type="text"] {
+    background-color: white;
+    background-image: url("../img/user.png");
+    background-size: 35px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    width: 50%;
+  }
+
+/*input email*/
+  input[type="email"] {
+    background-color: white;
+    background-image: url("../img/email.png");
+    background-size: 37px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    width: 50%;
+  }
+
+  /* input number */
+  input[type="number"] {
+    background-color: white;
+    background-image: url("../img/phone.png");
+    background-size: 35px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    width: 50%;
+  }
+  
+/*subject*/
+  .subject {
+    margin: 20px 0px;
+    width: 96%;
+  }
+
+  select {
+    background-color: white;
+    background-image: url("../img/subject.png");
+    background-size: 37px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 10px 50px;
+    width: 63.5%;
+  }
+  
+/*textarea*/
+  textarea {
+    background-color: white;
+    background-image: url("../img/textarea.png");
+    background-size: 32px;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    padding: 4px 50px;
+    width: 50%;
+  }
+  
+  .icon-textarea {
+    position: absolute;
+    top: 20px;
+    right: 400px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/star.png");
+    background-size: cover;
+  }
+
+  textarea::placeholder {
+    padding: 10px;
+  }
+  
+  input:hover {
+    border: 1px solid black;
+    background-image: url("../img/black-user.png");
+    background-position-x: left;
+  }
+  
+  input:focus {
+    border: 1px solid black;
+    background-image: url("../img/black-user.png");
+  }
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 400px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/star.png");
+    background-size: cover;
+  }
+  .checkbox {
+    padding: 10px 50px;
+    width: 50%;
+    position: relative;
+  }
+  .checkbox input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    width: 30px;
+    height: 20px;
+  }
+  .checkbox .checkbox span {
+    color: #575151;
+  }
+  .checkbox button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 45px;
+    background-color: #ff691c;
+    border: none;
+    color: white;
+  }
+  .checkbox button:hover {
+    opacity: 0.8;
+  }
