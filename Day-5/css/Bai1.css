@@ -73,7 +73,7 @@
     background-repeat: no-repeat;
     border: 1px solid #ccc;
     padding: 10px 50px;
-    width: 63.5%;
+    width: 61%;
   }
   
 /*textarea*/
@@ -90,7 +90,7 @@
   .icon-textarea {
     position: absolute;
     top: 20px;
-    left: 550px;
+    left: 680px;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
@@ -115,7 +115,7 @@
   .icon {
     position: absolute;
     top: 50%;
-    left: 550px;
+    left: 680px;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
