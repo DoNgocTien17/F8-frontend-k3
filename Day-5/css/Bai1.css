@@ -90,7 +90,7 @@
   .icon-textarea {
     position: absolute;
     top: 20px;
-    right: 400px;
+    left: 550px;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
@@ -115,7 +115,7 @@
   .icon {
     position: absolute;
     top: 50%;
-    right: 400px;
+    left: 550px;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
