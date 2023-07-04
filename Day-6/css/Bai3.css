@@ -1,0 +1,155 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: bisque url(../img/img-login.jpg) no-repeat 0 0 / cover fixed;
+    display: flex;  
+    justify-content: center;
+    margin: 150px auto;
+}
+
+.container {
+    position: relative;
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content-left {
+    width: 40%;
+    height: 450px;
+    background:  #ff574d;
+    padding: 70px 20px;
+    border-radius: 10px 0 0 10px; 
+    color: #fff;
+    text-align: center;
+
+}
+
+.content-left h1{
+    margin-bottom: 15px;
+}
+
+.content-left button {
+    margin: 25px 0;
+    padding: 5px 30px;
+    background: #fff;
+    color: #ff574d;
+    border: none;
+    border-radius: 3px;
+}
+
+.content-left .icon a {
+    display: inline-block;
+    background: #b7423c;
+    padding: 8px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.content-right {
+    width: 60%;
+    height: 450px;
+    padding: 50px 30px;
+    background: #fff;
+    border-radius: 0 10px 10px 0; 
+    text-align: center;
+    color: #717171;
+}
+
+.content-right h2 {
+    margin-bottom: 30px;
+}
+
+.content-right h2::after{
+    content: "";
+    display: block;
+    width: 50px;
+    border: 1px solid #ff574d;
+    margin: 7px 150px;
+}
+
+.content-right h2 span {
+    color: #ff574d; 
+}
+
+.content-right > input {
+    display: block;
+    padding: 10px 20px;
+    margin: 20px;
+    width: 90%;
+}
+
+.content-right .check {
+    display: flex;
+    margin: 10px;
+}
+
+.content-right .check input {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.content-right .check p {
+    margin-left: 85px;
+}
+
+.content-right button {
+    width: 90%;
+    padding: 10px 30px;
+    background: #ff574d;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.content-right p a {
+    text-decoration: none;
+    color: #717171;
+}
+
+.container .next {
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    left: 260px;
+    background-color: #ff574d;
+    border-radius: 50%;
+    box-shadow: 3px 1px 2px #ccc;
+}
+
+/*hover*/
+.content-left button:hover {
+    opacity: 0.8;
+}
+
+.content-right button:hover {
+    opacity: 0.8;
+}
+
+.content-right p a:hover {
+    opacity: 0.7;
+
+}
+
+.content-right p a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #ff574d;
+    transition: all 0.4s linear;
+    margin-left: 218px;
+}
+.content-right p a:hover::after {
+    width: 92px;
+}
