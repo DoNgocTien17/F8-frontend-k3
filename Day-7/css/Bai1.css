@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: aquamarine 
+    url(https://cdn.houseviet.vn/images/project/23042023/ha-noi-melody-residences-cover.jpg) 
+    no-repeat 0 0 / cover fixed;
+    color:  #3f3424;
+}
+
+.container {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    background: #ffffff94;
+    left: 200px;
+    top: 200px;
+    padding: 20px;
+}
+
+.container h1 {
+    color:#bf4240;
+    line-height: 50px;
+}
+
+.container p {
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+
+
+.fa-solid {
+    margin-right: 5px;
+}
+
+.price {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    left: 430px;
+    top: 175px;
+    background:#bf4240;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+}
+
+.price:hover {
+    background:#902927;
+}

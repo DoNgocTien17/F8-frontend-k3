@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+
+body {
+
+}
+
+.container {
+    position: relative;
+    margin: 30px 120px;
+}
+
+.container h3 {
+    text-transform: uppercase;
+
+}
+
+.container .divider {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 1px;
+    width: 55vw;
+    background-color: #ccc;
+  }
+  
+
+  .container .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.container .nav button {
+    background: #e4e4e4;
+    font-weight: 800;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+}
+
+.container .nav button:hover {
+    background: #ae7b37;
+    color: #fff;
+}
+
+.container .products {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    gap: 30px;
+}
+
+.products .box {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.products .box .img {
+    background: url(https://fastly.picsum.photos/id/184/420/250.jpg?hmac=HI5Ji_AoVopu1RLY7PNhfiqsS5rKE63DPaXzvRCNugA)
+    no-repeat 0 0 / cover ;
+    width: 420px;
+    height: 250px;
+    position: relative;
+    transition: transform 0.3s ease;
+
+}
+
+.box .img .content {
+    position: absolute;
+    margin: 30px;
+    width: 200px;
+}
+
+.img .content h4{
+    color: #fff;
+    position:absolute;
+}
+
+.img .content p{
+    color: #fff;
+    position:absolute;
+    top: 170px;
+    font-size: 12px;
+
+}
+
+.products .box .img:hover {
+    transform: scale(1.1);
+}
