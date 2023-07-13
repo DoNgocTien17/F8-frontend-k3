@@ -45,6 +45,7 @@ body {
     color: #ff574d;
     border: none;
     border-radius: 3px;
+    font-weight: 900;
 }
 
 .content-left .icon a {
@@ -53,6 +54,8 @@ body {
     padding: 8px;
     margin: 0 5px;
     color: #fff;
+    width: 40px;
+    border-radius: 5px;
 }
 
 .content-right {
@@ -67,6 +70,7 @@ body {
 
 .content-right h2 {
     margin-bottom: 30px;
+    color: #272323;
 }
 
 .content-right h2::after{
@@ -81,28 +85,28 @@ body {
     color: #ff574d; 
 }
 
-.content-right > input {
+.content-right > form > input {
     display: block;
     padding: 10px 20px;
     margin: 20px;
     width: 90%;
 }
 
-.content-right .check {
+.content-right form .check {
     display: flex;
     margin: 10px;
 }
 
-.content-right .check input {
+ form .check input {
     margin-left: 10px;
     margin-right: 5px;
 }
 
-.content-right .check p {
+.content-right form .check p {
     margin-left: 85px;
 }
 
-.content-right button {
+.content-right form button {
     width: 90%;
     padding: 10px 30px;
     background: #ff574d;
@@ -112,7 +116,7 @@ body {
     margin-bottom: 20px;
 }
 
-.content-right p a {
+.content-right form p a {
     text-decoration: none;
     color: #717171;
 }
@@ -133,16 +137,16 @@ body {
     opacity: 0.8;
 }
 
-.content-right button:hover {
+.content-right form button:hover {
     opacity: 0.8;
 }
 
-.content-right p a:hover {
+ form p a:hover {
     opacity: 0.7;
 
 }
 
-.content-right p a::after{
+ form p a::after{
     content: '';
     display: block;
     width: 0;
@@ -151,6 +155,6 @@ body {
     transition: all 0.4s linear;
     margin-left: 218px;
 }
-.content-right p a:hover::after {
+ form p a:hover::after {
     width: 92px;
 }

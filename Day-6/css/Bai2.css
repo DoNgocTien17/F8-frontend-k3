@@ -20,7 +20,7 @@ body {
     background: #fff;
     width: 350px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #ccc;
+    box-shadow: 5px 5px 5px #ccc;    transition: all 0.3s ease;
 }
 
 .content img {
@@ -34,6 +34,7 @@ body {
 .content h2 {
     display: inline-block;
     margin: 20px 0;
+    font-weight: 900;
 }
 
 .content p {

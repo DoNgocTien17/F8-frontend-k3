@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+#header {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-img img{
+    width: 175px;
+    height: auto;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav  .heading{
+    display: flex;
+    margin-right: -19px;
+}
+.nav .heading > li{
+   list-style-type: none;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 32px 0;
+}
+.nav .heading > li i{
+        font-size: 10px;
+    margin-left: 3px;
+}
+.nav .icon i{
+    font-size: 22px;
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.nav-heading > li:hover{
+    opacity: 0.9;
+}
+.main-nav{
+    position: relative;
+   
+}
+.mega-menu{
+    width: 1400px;
+    position: absolute;
+    left: -1250px;
+    margin: 68px 52px;
+    display: flex;
+    padding: 30px;
+    background: white;
+    top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+    visibility: hidden;
+    cursor: auto;
+}
+.main-nav:hover .mega-menu{
+    visibility:inherit;
+}
+.menu-flex{
+    display: flex;
+}.mega-menu1{
+    margin-right: 40px;
+    position: relative;
+}
+.mega-menu1::after{
+    content: "";
+    width: 1px;
+    height: 300px;
+    position: absolute;
+    background-color: #ccc;
+    top: 0;
+    right: 0;
+}
+.main-nav li{
+    list-style-type: none;
+    margin: 8px 0;
+    width: 152px;
+}
+.menu-flex1{
+        margin: 16px 0;
+}
+.menu-flex2{
+    margin: 16px 50px;
+}
+.menu-elements{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-elements__flex{
+    margin-right: 200px;
+}
+.mega-menu li:hover{
+    cursor: pointer;
+    color: #000;
+}
