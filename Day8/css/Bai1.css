@@ -6,7 +6,6 @@
     font-family: 'Manrope', sans-serif;
 }
 
-
 #header {
     margin: 0 50px;
     display: flex;
@@ -44,25 +43,25 @@
     padding: 10px;
     cursor: pointer;
 }
-.nav-heading > li:hover{
-    opacity: 0.9;
+.heading > li:hover{
+    opacity: 0.8;
 }
 .main-nav{
     position: relative;
    
 }
 .mega-menu{
+    visibility: hidden;
     width: 1400px;
     position: absolute;
     left: -1250px;
     margin: 68px 52px;
     display: flex;
     padding: 30px;
-    background: white;
+    background: #fff;
     top: 15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 4px;
-    visibility: hidden;
+    box-shadow: 0px 3px 8px black;
+    border-radius: 5px;
     cursor: auto;
 }
 .main-nav:hover .mega-menu{
@@ -76,12 +75,12 @@
 }
 .mega-menu1::after{
     content: "";
-    width: 1px;
-    height: 300px;
     position: absolute;
-    background-color: #ccc;
+    width: 1px;
+    height: 330px;
     top: 0;
     right: 0;
+    background-color: #ccc;
 }
 .main-nav li{
     list-style-type: none;
@@ -99,7 +98,7 @@
     display: flex;
     justify-content: space-between;
 }
-.menu-elements__flex{
+.menu-content{
     margin-right: 200px;
 }
 .mega-menu li:hover{
