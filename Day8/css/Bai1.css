@@ -88,7 +88,7 @@
     width: 152px;
 }
 .menu-flex1{
-        margin: 16px 0;
+    margin: 16px 0;
 }
 .menu-flex2{
     margin: 16px 50px;
@@ -99,9 +99,5 @@
     justify-content: space-between;
 }
 .menu-content{
-    margin-right: 200px;
-}
-.mega-menu li:hover{
-    cursor: pointer;
-    color: #000;
+    margin-right: 150px;
 }
