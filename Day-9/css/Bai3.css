@@ -72,7 +72,7 @@
   }
   .form-input:not(:placeholder-shown) + .form-label,
   .form-input:focus + .form-label {
-    top: 3px;
+    top: 15px;
     font-size: 0.7rem;
   }
   
