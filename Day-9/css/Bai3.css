@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  :root {
+    --label-color: #999;
+    --border-color: #ccc;
+    --font-site-heading: 30px;
+    --font-site-text: 14px;
+  }
+  .container {
+    width: 600px;
+    height: 500px;
+  }
+  .header {
+    margin: 20px;
+  }
+  .header h1 {
+    font-size: var(--font-site-heading);
+    color: #343232;
+  }
+  .header p {
+    font-size: var(--font-site-text);
+    color: #716f6f;
+    margin: 20px 0;
+  }
+
+  
+
+  /* Làm hiệu ứng chữ */
+  .form-input {
+    width: 280px;
+    height: 50px;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  input {
+    position: relative;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.4);
+  }
+  select {
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid var(--border-color);
+    color: var(--label-color);
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.4);
+  }
+  .form-label {
+    position: absolute;
+    left: 21px;
+    top: 15px;
+    color: var(--label-color);
+    transition: 0.4s ease;
+  }
+  .form-input:not(:placeholder-shown) + .form-label,
+  .form-input:focus + .form-label {
+    top: 3px;
+    font-size: 0.7rem;
+  }
+  
+  .form form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  /* end */
+  
+  /*  tera */
+  .tera {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+  }
+  .tera textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  .label-message {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transition: 0.4s ease;
+    color: var(--label-color);
+  }
+  .tera textarea:not(:placeholder-shown) + .label-message,
+  .tera textarea:focus + .label-message {
+    font-size: 0.7rem;
+    top: 13px;
+  }
+  
+  .btn {
+    padding: 15px 20px;
+    border-radius: 30px;
+    background: #3f6fdf;
+    color: white;
+    border: none;
+  }
+  
+  /* end */
+
+  /* Làm ngôi sao */
+  .form-label i {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    font-size: 5px;
+  }
+  .label-message i {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    font-size: 5px;
+  }
+  

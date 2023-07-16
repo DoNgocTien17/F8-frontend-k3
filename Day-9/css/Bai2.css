@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --font-family-heading:  'Space Grotesk', sans-serif;
+    --font-family-text: 'Inter', sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  }
+  .logo {
+    padding-top: 40px;
+  }
+  .logo i {
+    font-size: 40px;
+    color: rgb(246, 123, 22);
+  }
+  
+  .content {
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    transition: 0.4s ease;
+  }
+  .content h2 {
+    font-family: var(--font-family-heading);
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  .content p {
+    font-family: var(--font-family-text);
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .learn-more {
+    position: absolute;
+    bottom: 0;
+    transition: 0.4s ease;
+  }
+  .learn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  .learn-more a {
+    text-decoration: none;
+    color: white;
+  }
+  .icon-right i {
+    color: white;
+  }
+  .icon-right:hover {
+
+    background: white;
+  }
+  
+  .icon-right:hover i {
+    color: black;
+  }
+  
+  .btn-learn {
+    padding: 0 10px;
+  }
+  .btn-learn a {
+    font-family: var(--font-family-heading);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .icon-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 50%;
+  }
+  
+  .icon-right {
+    font-size: 13px;
+  }
+  
+  /* hiệu ứng khi hover */
+  .box:hover .content {
+    top: 30px;
+    color: white;
+  }
+  .box:hover .learn-more {
+    bottom: 50px;
+    opacity: 1;
+  }
+  
+  .box:hover .logo {
+    opacity: 0;
+  }
+  .box:hover {
+    background-image: url(https://fastly.picsum.photos/id/596/200/300.jpg?hmac=pVPfm7n4UQpHw17xww_PzqSAFP5JYEJo6qGFtPJxxA0);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
