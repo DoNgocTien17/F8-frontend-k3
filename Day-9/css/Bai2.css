@@ -1,12 +1,12 @@
+:root {
+  --font-family-heading:  'Space Grotesk', sans-serif;
+  --font-family-text: 'Inter', sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
-  
-  :root {
-    --font-family-heading:  'Space Grotesk', sans-serif;
-    --font-family-text: 'Inter', sans-serif;
   }
 
   body {
@@ -34,7 +34,7 @@
   }
   .logo i {
     font-size: 40px;
-    color: rgb(246, 123, 22);
+    color:#a26f5a;
   }
   
   .content {
@@ -50,15 +50,12 @@
   }
   .content p {
     font-family: var(--font-family-text);
-    font-weight: 300;
     font-size: 14px;
   }
   .learn-more {
     position: absolute;
     bottom: 0;
     transition: 0.4s ease;
-  }
-  .learn-more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,9 +73,7 @@
     background: white;
   }
   
-  .icon-right:hover i {
-    color: black;
-  }
+
   
   .btn-learn {
     padding: 0 10px;
@@ -115,8 +110,12 @@
   .box:hover .logo {
     opacity: 0;
   }
+
+  .icon-right:hover i {
+    color: black;
+  }
+
   .box:hover {
-    background-image: url(https://fastly.picsum.photos/id/596/200/300.jpg?hmac=pVPfm7n4UQpHw17xww_PzqSAFP5JYEJo6qGFtPJxxA0);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: url(https://fastly.picsum.photos/id/570/500/300.jpg?hmac=kPrru8f8hoHZSlw4pUDXRDq-locSFlD7Kv6BBdRYIgI);
+    background-repeat: no-repeat 0 0 / cover;
   }
