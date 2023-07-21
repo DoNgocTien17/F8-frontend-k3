@@ -39,6 +39,8 @@ body {
 .menu li:hover label {
     background-color: #31A8F7;
     cursor: pointer;
+    color: #fff;
+
 }
 
 .menu li:last-child {
@@ -48,7 +50,6 @@ body {
 .menu label {
     display: block;
     padding: 10px;
-    color: #fff;
 }
 
 .box {
