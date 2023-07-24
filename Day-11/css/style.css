@@ -1,0 +1,479 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+  }
+
+:root {
+    --color-text: #3d2514;
+    --font-BebasNeue: BebasNeue;
+    --font-Alfaslabone: Alfaslabone;
+}
+
+  body {
+    font-family: Montserrat, serif;
+    color: var(--color-text);
+  }
+
+    /* font */
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../font/Montserrat/static/Montserrat-Light.ttf);
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    src: url(../font/Montserrat/static/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../font/Montserrat/static/Montserrat-Medium.ttf);
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: url(../font/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Alfaslabone";
+    font-weight: 400;
+    src: url(../font/Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
+  }
+  @font-face {
+    font-family: "BebasNeue";
+    font-weight: 400;
+    src: url(../font/Bebas_Neue/BebasNeue-Regular.ttf);
+  }
+  
+  /* header */
+  .header {
+    padding: 54px 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .shipper-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .shipper-contact {
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+  }
+  li {
+    list-style: none;
+    font-weight: 700;
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  
+  .menu ul li {
+    padding: 10px 0px;
+  }
+  .menu ul li a {
+    font-family: BebasNeue;
+    font-size: 20px;
+    transition: 0.5s ease;
+  }
+  .menu ul li a:hover {
+    color: white;
+  }
+  
+  .bars {
+    display: none;
+  }
+  .shipper-contact-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .menu-bars {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #422a11c8;
+    transition: opacity 0.5s ease;
+    transition: visibility 0.5s ease;
+    transition: transform 0.4s ease-out;
+    opacity: 0.1;
+    transform: translateX(-100%);
+  }
+  #bars:checked ~ .menu-bars {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .menu-bars .list-menu-bars {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-bars .list-menu-bars li a {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px dotted #fff;
+    color: #fff;
+    line-height: 30px;
+  }
+  .menu-bars .list-menu-bars li a:hover {
+    opacity: 0.6;
+  }
+  /* banner-Hamberger */
+  /* Info */
+  .inner {
+    padding: 15% 0;
+  }
+  .info-burger {
+    padding: 100px 20px;
+  }
+  .info-burger span {
+    border: 2px dashed black;
+    padding: 3px 10px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .info-burger h1 {
+    font-family: Alfaslabone;
+    font-size: 5rem;
+    text-shadow: 2px 2px white;
+  }
+  .info-burger h2 {
+    font-family: Alfaslabone;
+  
+    font-size: 3.5rem;
+    text-shadow: 2px 2px white;
+  }
+  
+  /* end Info */
+  .banner {
+    background-image: url("../img/header-background.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .banner-burger {
+    position: relative;
+  }
+  .banner-burger img {
+    max-width: 100%;
+  }
+  .wrap {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: #bf2222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 60px;
+    top: 350px;
+  }
+  
+  .wrap-price {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .price span:nth-child(1) {
+    font-size: 3.3rem;
+  }
+  price span:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  
+  .price span {
+    color: white;
+  }
+  
+  .quantity {
+    font-size: 2rem;
+    color: white;
+  }
+  /* end banner */
+  /* section products */
+  .products {
+    margin-top: 1000px;
+  }
+  .products-title {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .products-title span {
+    font-weight: 700;
+    padding: 15px 25px;
+    background: #ffc045;
+  }
+  .products-title h2 {
+    font-family: Alfaslabone;
+    padding: 25px 0;
+    font-size: 50px;
+  }
+  .products-list {
+    margin: 30px auto;
+  }
+  
+  .product {
+    padding: 0 30px;
+    height: 500px;
+  }
+  .product-img {
+    height: 312px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  .product-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 30px;
+    background-image: url("../img/shadow.png");
+    background-size: cover;
+  }
+  .product-img img {
+    max-width: 100%;
+    transition: all 0.5s ease;
+  }
+  .product-img img:hover {
+    scale: 110%;
+    opacity: 0.5;
+  }
+  .product-info {
+    text-align: center;
+  }
+  .product-info h3 {
+    font-family: BebasNeue;
+    font-size: 30px;
+    margin: 15px 0;
+  }
+  .product-info p {
+    margin-bottom: 30px;
+  }
+  .product-info .btn {
+    padding: 15px 30px;
+    background: #bf2222;
+    transition: background-color 0.5s ease-out;
+  }
+  .product-info a {
+    font-weight: 700;
+    color: white;
+    font-size: Alfaslabone;
+  }
+  
+  .product-info .btn:hover {
+    background-color: #ffc045;
+    cursor: pointer;
+  }
+  /* end */
+  
+  /* discover-inner */
+  .discover-title {
+    padding-top: 10%;
+    padding-bottom: 20px;
+  }
+  .discover-title h3 {
+    font-size: 20px;
+    font-family: BebasNeue;
+  }
+  
+  .discover-title h2 {
+    font-size: 35px;
+    font-family: Alfaslabone;
+    padding: 20px 0;
+  }
+  .discover-inner {
+    padding: 20px;
+    box-shadow: 10px 10px 15px 5px #ccc;
+  }
+  .discover-img img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* end */
+  
+  /* order */
+  .orders {
+    background-image: url("../img/imgContact.png");
+    background-size: cover;
+    height: 600px;
+  
+    padding: 50px 0;
+  }
+  .title-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-order h3 {
+    font-size: 29px;
+    font-family: var(--font-BebasNeue);
+    margin: 15px 0;
+  }
+  .title-order h2 {
+    font-family: var(--font-Alfaslabone);
+    font-size: 40px;
+    margin: 15px 0;
+  }
+  input::placeholder {
+    font-family: var(--font-BebasNeue);
+    font-size: 21px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+  }
+  .row-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .field-group {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 10px;
+  }
+  .field-group input {
+    border: none;
+    padding: 10px 20px;
+  }
+  .order-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background: #bf2222;
+    font-family: var(--font-Alfaslabone);
+    color: white;
+    border: none;
+  }
+  .field-group input {
+    width: 100%;
+  }
+  /* end */
+  
+  /* footer */
+  .footer {
+    margin: 50px 0;
+  }
+  .footer-banner {
+    background-image: url("../img/background-footer.jpg");
+    background-size: cover;
+    color: white;
+    height: 500px;
+  }
+  .row-footer-banner {
+    padding: 10% 20px;
+  }
+  .contact-footer {
+    padding: 20px 10px;
+  }
+  
+  .contact-footer p i {
+    padding-right: 5px;
+    padding: 10px 0;
+  }
+  .contact-footer p {
+    font-family: var(--font-BebasNeue);
+    font-size: 21px;
+  }
+  
+  .footer-title p {
+    line-height: 1.6;
+  }
+  
+  /* end */
+  .company {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .company p {
+    font-family: var(--font-BebasNeue);
+    font-size: 18px;
+  }
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    z-index: 1;
+  }
+  
+  .social div {
+    width: 30px;
+    height: 30px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  /* Reponsive */
+  @media screen and (max-width: 991.98px) {
+    .shipper-contact {
+      display: none;
+    }
+    .shipper-contact-top {
+      /* display: block; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -100px;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+    .menu ul li {
+      display: none;
+    }
+    .bars {
+      display: block;
+      font-size: 30px;
+    }
+    .orders {
+      background-image: none;
+    }
+    .field-group {
+      width: 97%;
+    }
+  }
+  
