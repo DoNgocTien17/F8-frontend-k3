@@ -1,0 +1,59 @@
+@mixin button() {
+    width: 100%;
+    color: #fff;
+    outline: none;
+    border: none;
+    height: 54px;
+    line-height: 54px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    transition:
+        background-color .2s ease-in-out,
+        color .2s ease-in-out,
+        border-color .2s ease-in-out,
+        box-shadow .2s ease-in-out;
+}
+
+@mixin form() {
+    margin-top: 76px;
+    width: 100%;
+    .form-input {
+        position: relative;
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 24px;
+        &+.form-input {
+            margin-top: 28px;
+        }
+        label {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .3s ease-in-out;
+            color: #adafca;
+            font-weight: 600;
+            padding: 0 5px;
+            background-color: #fff;
+            pointer-events: none;
+        }
+        input {
+            width: 100%;
+            padding: 0 18px;
+            height: 54px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            outline: none;
+            transition: border 0.3s ease-in-out;
+            &:focus {
+                border: 1px solid blue;
+                &+label {
+                    top: 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
