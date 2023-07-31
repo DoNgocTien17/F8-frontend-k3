@@ -1,0 +1,157 @@
+.about {
+  margin: 100px 0;
+  height: 760px;
+  .container {
+    h3 {
+      color: $textColor;
+      text-align: center;
+      font-family: Inter;
+      font-size: 31.667px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 131.523%; /* 41.649px */
+      margin-bottom: 24.33px;
+    }
+
+    p {
+      color: var(--content, #2c2c2c);
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20.417px; /* 127.604% */
+      margin-bottom: 100px;
+    }
+
+    .about-flex {
+      margin: 0 120px;
+      display: flex;
+      align-items: center;
+      gap: 21.67px;
+      position: relative;
+
+      .box-both {
+        padding: 33.33px;
+        width: 294.167px;
+        height: 337.5px;
+        flex-shrink: 0;
+        border-radius: 3.333px;
+        background: #fff;
+        box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px
+          rgba(54, 54, 54, 0.12);
+
+        .medal {
+          width: 83.333px;
+          height: 83.333px;
+          flex-shrink: 0;
+          padding: 19.17px;
+          border-radius: 10px;
+          background: #fff0e7;
+        }
+        h2 {
+          //   width: 227.5px;
+          color: $textColor;
+          font-family: Inter;
+          font-size: 43.333px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+
+        p {
+          color: $textColor;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30.833px; /* 154.167% */
+          text-align: left;
+        }
+      }
+
+      .box-center {
+        padding: 60.83px 33.33px;
+        width: 342.5px;
+        height: 392.5px;
+        flex-shrink: 0;
+        border-radius: 3.333px;
+        background: #fff;
+        box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px
+          rgba(54, 54, 54, 0.12);
+
+        .medal {
+          width: 83.333px;
+          height: 83.333px;
+          flex-shrink: 0;
+          padding: 19.17px;
+          border-radius: 10px;
+          background: #f2ffec;
+        }
+        h2 {
+          //   width: 227.5px;
+          color: $textColor;
+          font-family: Inter;
+          font-size: 43.333px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+
+        p {
+          color: $textColor;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30.833px; /* 154.167% */
+          text-align: left;
+        }
+      }
+
+      .circle-green {
+        position: absolute;
+        width: 235px;
+        height: 235px;
+        flex-shrink: 0;
+        background: $green-200;
+        border-radius: 50%;
+        z-index: -1;
+        top: -90px;
+        left: -140px;
+      }
+
+      .circle-orange {
+        position: absolute;
+        width: 235px;
+        height: 235px;
+        flex-shrink: 0;
+        background: $orange-200;
+        border-radius: 50%;
+        z-index: -1;
+        bottom: -90px;
+        right: -140px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .about {
+    .container {
+      .about-flex {
+        margin: 0 50px;
+
+        .box-both {
+          width: 250px;
+          height: 337.5px;
+        }
+
+        .box-center {
+          width: 300px;
+          height: 392.5px;
+        }
+      }
+    }
+  }
+}
