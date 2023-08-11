@@ -1,0 +1,35 @@
+.achievements {
+  margin-bottom: 140px;
+  .container {
+    margin: 0 17.5vw;
+    .achievements-item {
+      display: inline-flex;
+      width: 288px;
+      height: 131px;
+      margin-top: 50px;
+      .achievements-icon {
+        margin-right: 15.83px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .achievements-text {
+        max-width: 200px;
+        .achievements-text-1 {
+          color: $textColor;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 26.667px; /* 133.333% */
+          margin-bottom: 6.67px;
+        }
+
+        .achievements-text-2 {
+          color: $textColor;
+          font-size: 17px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

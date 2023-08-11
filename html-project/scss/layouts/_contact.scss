@@ -1,0 +1,116 @@
+#contact {
+  margin-bottom: 172px;
+  .contact-right {
+    .contact-right-text {
+      margin-top: 70px;
+      color: $textColor;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    form {
+      width: 598px;
+      #ip-text {
+        border-radius: 6.667px;
+        border: 1px solid $grey-500;
+        width: 38vw;
+        height: 40px;
+        margin: 26px 0 22.67px;
+        padding: 0 20px;
+        &::placeholder {
+          color: $grey-500;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        &:focus {
+          border-color: $primaryColor;
+        }
+      }
+      .dou-input {
+        input {
+          border-radius: 6.667px;
+          border: 1px solid $grey-500;
+          width: 30vw;
+          height: 40px;
+          margin-right: 15px;
+          padding: 0 20px;
+
+          &::placeholder {
+            color: $grey-500;
+            font-size: 16px;
+            font-weight: 400;
+          }
+
+          &:focus {
+            border-color: $primaryColor;
+          }
+        }
+      }
+
+      .txtrea {
+        width: 38vw;
+        border-radius: 6.667px;
+        border: 0.833px solid $grey-500;
+        margin: 22.67px 0 36.5px;
+        padding: 20px;
+
+        &::placeholder {
+          color: $grey-500;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        &:focus {
+          border-color: $primaryColor;
+        }
+      }
+
+      button {
+        border-radius: 6.667px;
+        background: $primaryColor;
+        padding: 13.333px 40px;
+        color: #fff;
+        margin-left: 31.5vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  #contact {
+    .contact-left {
+      img {
+        display: none;
+      }
+    }
+    .contact-right {
+      text-align: center;
+      .contact-right-text {
+        display: inline-block;
+      }
+      form {
+        display: inline-block;
+        #ip-text {
+          width: 60vw;
+          margin-bottom: 10px;
+        }
+        .dou-input {
+          input {
+            width: 59.8vw;
+            margin: 10px 0;
+          }
+        }
+
+        .txtrea {
+          width: 60vw;
+        }
+
+        button {
+          display: inline-block;
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
