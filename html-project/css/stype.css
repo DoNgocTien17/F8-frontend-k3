@@ -205,20 +205,20 @@ ul {
   position: relative;
 }
 .content-header .content-right .backgroung-green .img-span img {
-  width: 710px;
+  width: 680px;
   height: auto;
   position: absolute;
-  left: -165px;
+  left: -140px;
 }
 .content-header .content-right .backgroung-green .img-span span {
   position: absolute;
   transform: rotate(90deg);
   color: rgba(34, 96, 0, 0.1921568627);
-  font-size: 16.6rem;
+  font-size: 16rem;
   font-weight: 800;
   line-height: 100%; /* 166.667px */
   top: 200px;
-  right: -100px;
+  left: 300px;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -228,7 +228,7 @@ ul {
   .content-header .content-left {
     position: absolute;
     z-index: 2;
-    right: 50px;
+    left: 350px;
     bottom: 50px;
   }
   .content-header .content-left h1 {
@@ -248,7 +248,7 @@ ul {
   .content-header .content-right .backgroung-green .img-span span {
     transform: rotate(0);
     top: 0;
-    left: 382px;
+    left: 320px;
   }
 }
 .about {
@@ -716,20 +716,27 @@ ul {
 #contact .contact-right form #ip-text:focus {
   border-color: #46b20f;
 }
-#contact .contact-right form .dou-input input {
+#contact .contact-right form .col-12 {
+  margin: -8px;
+}
+#contact .contact-right form .col-12 .dou-input {
+  display: flex;
+}
+#contact .contact-right form .col-12 .dou-input input {
   border-radius: 6.667px;
   border: 1px solid #a3a3a3;
-  width: 30vw;
+  flex: 1;
+  min-width: 18.5vw;
   height: 40px;
   margin-right: 15px;
   padding: 0 20px;
 }
-#contact .contact-right form .dou-input input::placeholder {
+#contact .contact-right form .col-12 .dou-input input::placeholder {
   color: #a3a3a3;
   font-size: 16px;
   font-weight: 400;
 }
-#contact .contact-right form .dou-input input:focus {
+#contact .contact-right form .col-12 .dou-input input:focus {
   border-color: #46b20f;
 }
 #contact .contact-right form .txtrea {
@@ -753,6 +760,10 @@ ul {
   padding: 13.333px 40px;
   color: #fff;
   margin-left: 31.5vw;
+  transition: all 0.3s ease;
+}
+#contact .contact-right form button:hover {
+  background: #ff6916;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -772,9 +783,10 @@ ul {
     width: 60vw;
     margin-bottom: 10px;
   }
-  #contact .contact-right form .dou-input input {
-    width: 59.8vw;
-    margin: 10px 0;
+  #contact .contact-right form .col-lg-6 .dou-input input {
+    min-width: 29.2vw;
+    margin-top: 10px;
+    margin-right: 15px;
   }
   #contact .contact-right form .txtrea {
     width: 60vw;
@@ -857,6 +869,9 @@ ul {
 }
 
 @media screen and (max-width: 991.98px) {
+  .footer .footer-backgound {
+    height: 48vw;
+  }
   .footer > .container {
     margin: 0 60px;
   }

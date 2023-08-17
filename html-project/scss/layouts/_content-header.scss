@@ -33,23 +33,22 @@
       border-bottom-left-radius: 18px;
       position: relative;
       .img-span {
-        // width: 50vw;
         img {
-          width: 710px;
+          width: 680px;
           height: auto;
           position: absolute;
-          left: -165px;
+          left: -140px;
         }
 
         span {
           position: absolute;
           transform: rotate(90deg);
           color: #22600031;
-          font-size: 16.6rem;
+          font-size: 16rem;
           font-weight: 800;
           line-height: 100%; /* 166.667px */
           top: 200px;
-          right: -100px;
+          left: 300px;
         }
       }
     }
@@ -62,7 +61,7 @@
     .content-left {
       position: absolute;
       z-index: 2;
-      right: 50px;
+      left: 350px;
       bottom: 50px;
 
       h1 {
@@ -86,7 +85,7 @@
           span {
             transform: rotate(0);
             top: 0;
-            left: 382px;
+            left: 320px;
           }
         }
       }

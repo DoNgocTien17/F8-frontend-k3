@@ -26,23 +26,28 @@
           border-color: $primaryColor;
         }
       }
-      .dou-input {
-        input {
-          border-radius: 6.667px;
-          border: 1px solid $grey-500;
-          width: 30vw;
-          height: 40px;
-          margin-right: 15px;
-          padding: 0 20px;
+      .col-12 {
+        margin: -8px;
+        .dou-input {
+          display: flex;
+          input {
+            border-radius: 6.667px;
+            border: 1px solid $grey-500;
+            flex: 1;
+            min-width: 18.5vw;
+            height: 40px;
+            margin-right: 15px;
+            padding: 0 20px;
 
-          &::placeholder {
-            color: $grey-500;
-            font-size: 16px;
-            font-weight: 400;
-          }
+            &::placeholder {
+              color: $grey-500;
+              font-size: 16px;
+              font-weight: 400;
+            }
 
-          &:focus {
-            border-color: $primaryColor;
+            &:focus {
+              border-color: $primaryColor;
+            }
           }
         }
       }
@@ -71,6 +76,10 @@
         padding: 13.333px 40px;
         color: #fff;
         margin-left: 31.5vw;
+        transition: all 0.3s ease;
+        &:hover {
+          background: $secondaryColor;
+        }
       }
     }
   }
@@ -94,10 +103,13 @@
           width: 60vw;
           margin-bottom: 10px;
         }
-        .dou-input {
-          input {
-            width: 59.8vw;
-            margin: 10px 0;
+        .col-lg-6 {
+          .dou-input {
+            input {
+              min-width: 29.2vw;
+              margin-top: 10px;
+              margin-right: 15px;
+            }
           }
         }
 

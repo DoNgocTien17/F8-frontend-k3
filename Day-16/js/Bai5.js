@@ -1,15 +1,15 @@
-function triangle(N) {
-    let num = 1;
-    for (let i = 1; i <= N; i++) {
-        let row = "";
-        for (let j = 1; j <= i; j++) {
-            row += num.toString().padStart(3, " ") + " ";
-            num++;
-        }
-        console.log(row);
-    }
+var n = 10;
+var count = 0;
+var output = "";
+
+for (var i = 1; i <= n; i++) {
+  for (var j = 1; j <= i; j++) {
+    count++;
+    output += count + " ";
+  }
+
+  output += "<br/>";
 }
 
-const N = 5;
-
-triangle(N);
+document.write(output);
+console.log(output);
