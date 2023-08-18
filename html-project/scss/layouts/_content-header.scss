@@ -61,8 +61,8 @@
     .content-left {
       position: absolute;
       z-index: 2;
-      left: 350px;
-      bottom: 50px;
+      left: 41vw;
+      top: 40vw;
 
       h1 {
         max-width: 400px;
@@ -77,15 +77,15 @@
         border-bottom-left-radius: 0;
         .img-span {
           img {
-            width: 400px;
+            width: 45vw;
             top: -20px;
             left: -10px;
           }
 
           span {
             transform: rotate(0);
-            top: 0;
-            left: 320px;
+            top: 5vw;
+            left: 40vw;
           }
         }
       }
