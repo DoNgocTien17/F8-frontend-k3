@@ -70,7 +70,7 @@
     }
 
     .content-right {
-      .backgroung-green {
+      .background-green {
         width: 99.8vw;
         margin: 0 -13px;
         border-top-left-radius: 0;
@@ -86,6 +86,25 @@
             transform: rotate(0);
             top: 5vw;
             left: 40vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767.98px) {
+  .content-header {
+    .content-left {
+    }
+
+    .content-right {
+      .backgoung-green {
+        .img-span {
+          img {
+            display: none;
+          }
+          span {
           }
         }
       }
