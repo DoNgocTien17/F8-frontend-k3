@@ -8,24 +8,41 @@ var errors = {
     unique: "Email đã có người sử dụng",
     required: "Vui lòng nhập địa chỉ email",
   },
+  password: {
+    required: "Vui lòng nhập mật khẩu",
+    same: "Mật khẩu phải khớp với mật khẩu nhập lại",
+  },
 };
 
+// //C1:
+// function getError(field) {
+//   const errorGroup = errors[field];
+
+//   if (errorGroup) {
+//     for (const errorKey in errorGroup) {
+//       if (errorGroup.hasOwnProperty(errorKey)) {
+//         return errorGroup[errorKey];
+//       }
+//     }
+//   }
+
+//   return null;
+// }
+
+// const nameError = getError("name");
+// const emailError = getError("email");
+
+// console.log(nameError);
+// console.log(emailError);
+
+//C2:
 function getError(field) {
-  const errorGroup = errors[field];
-
-  if (errorGroup) {
-    for (const errorKey in errorGroup) {
-      if (errorGroup.hasOwnProperty(errorKey)) {
-        return errorGroup[errorKey];
-      }
-    }
+  if (errors[field]) {
+    var error = errors[field];
+    var key = Object.keys(error).at(0);
+    return error[key];
   }
-
-  return null;
+  return undefined;
 }
-
-const nameError = getError("name");
-const emailError = getError("email");
-
-console.log(nameError);
-console.log(emailError);
+console.log(getError("name"));
+console.log(getError("email"));
