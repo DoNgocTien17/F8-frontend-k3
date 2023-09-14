@@ -5,7 +5,7 @@ function daoNguocSo(so) {
 
   return parseInt(chuoiDaoNguoc, 10);
 }
-
+ 
 var soCanDaoNguoc = 12345;
 var ketQua = daoNguocSo(soCanDaoNguoc);
 console.log(ketQua);
