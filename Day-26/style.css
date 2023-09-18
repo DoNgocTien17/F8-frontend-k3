@@ -1,0 +1,113 @@
+   
+    body {
+        font-family: Arial, sans-serif;
+        background: #8758ff;
+    }
+
+    #anonymous-list {
+        width: 400px;
+        margin: 80px auto;
+        background: #1a1a40;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 32px;
+        border-radius: 6px;
+    }
+
+    #anonymous-list h1 {
+        color: white;
+        font-size: 28px;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    ul {
+        width: 395px;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    li {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #8758ff;
+        border-radius: 6px;
+        padding: 5px 16px;
+    }
+
+    .anonymousForm {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .anonymousForm input[type="text"] {
+        padding: 6px 16px;
+        width: 288px;
+        border: 1px solid #8758ff;
+        outline: none;
+        color: #fff;
+        background: none;
+    }
+
+    #anonymous-add-task {
+        padding: 9px;
+        background-color: #8758ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .anonymous-taskText {
+        color: #fff;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+
+    .anonymous-edit,
+    .anonymous-delete {
+        padding: 5px;
+        background-color: #8758ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .anonymous-save {
+        padding: 9px;
+        background-color: #8758ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .anonymous-edit i,
+    .anonymous-delete i {
+        font-size: 16px;
+    }
+
+    .anonymous-text-edit {
+        padding: 8px 16px;
+        width: 288px;
+        border: 1px solid #8758ff;
+        outline: none;
+        color: #fff;
+        background: none;
+    }
+
+    /* js */
+    .edited-task-item {
+        justify-content: flex-start;
+        background: transparent;
+        padding: 0;
+    }
+    
+ 
