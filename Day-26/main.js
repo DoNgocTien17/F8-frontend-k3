@@ -32,11 +32,11 @@ function addTask() {
   var deleteButton = taskItem.querySelector(".anonymous-delete");
   deleteButton.addEventListener("click", function () {
     taskItem.style.opacity = "0";
-    taskItem.style.transition = "opacity 1s ease";
+    taskItem.style.transition = "opacity 0.5s ease";
 
     setTimeout(function () {
       taskList.removeChild(taskItem);
-    }, 900);
+    }, 400);
   });
 
   // Thêm task vào danh sách
