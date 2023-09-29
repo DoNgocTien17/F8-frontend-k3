@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 10px;
+  }
+  table tr td {
+    height: 30px;
+  }
+  table tr th {
+    height: 30px;
+  }
+  h3 {
+    padding: 20px 0;
+  }
+  .pd-5 {
+    padding:5px;
+  }
+  .btnAll {
+    margin: 10px 5px;
+  }
