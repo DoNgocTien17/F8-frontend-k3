@@ -41,19 +41,25 @@ const products = [
     image: "img/img6.jpg",
     rating: 3.8,
   },
+  // Add more products here
 ];
 
 function renderProducts() {
   const productsInfo = document.querySelector(".products-info");
 
+  // Hiển thị Skeleton Screen
   showSkeletonScreen(productsInfo);
 
+  // Tạo Promise với độ trễ ngẫu nhiên từ 1 đến 2 giây
   const delay = Math.floor(Math.random() * 1000) + 1000;
   const delayPromise = new Promise((resolve) => setTimeout(resolve, delay));
 
+  // Khi độ trễ kết thúc, xóa Skeleton Screen và hiển thị dữ liệu sản phẩm
   delayPromise.then(() => {
+    // Xóa Skeleton Screen
     hideSkeletonScreen(productsInfo);
 
+    // Hiển thị dữ liệu sản phẩm
     products.forEach((product) => {
       const item = document.createElement("div");
       item.classList.add("item");
@@ -164,4 +170,5 @@ function hideSkeletonScreen(container) {
   container.innerHTML = "";
 }
 
+// Gọi hàm renderProducts để hiển thị sản phẩm
 renderProducts();
